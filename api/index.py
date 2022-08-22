@@ -7,6 +7,7 @@ class handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        id=id+1
+        a = self.path
+        self.wfile.write(a.encode())
         self.wfile.write("DearXuan's API by python!".encode())
-        return (id)
+        return
