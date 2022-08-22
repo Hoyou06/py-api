@@ -9,6 +9,6 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         b = self.path
         a = int(b[-2:])
-        self.wfile.write(a.encode()+"/n")
+        self.wfile.write(a.encode()+"###########")
         self.wfile.write("DearXuan's API by python!".encode())
         return
